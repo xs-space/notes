@@ -7,24 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="app"></div>
-
-    <template id="my-app">
-        <h2>{{message}}</h2>
-    </template>
-    
-    <script src="../js/vue.js"></script>
+    <!-- 1.对象的引用赋值 -->
     <script>
-        const App = {
-            template: '#my-app',
-            data() {
-                return {
-                    message: "hello world"
-                }
-            }
-        }
+        // 对象是引用类型
+        // const info = { name: "zhangsan", age: 20 }
+        // const obj = info
+        // info.name = "lisi"
+        // console.log(obj.name); // lisi
+    </script>
 
-        Vue.createApp(App).mount('#app')
+    <!-- 2.对象的浅拷贝 -->
+    <script>
+        // const info = { name: "zhangsan", age: 20, friends:{name: "jms", age: 18} }
+        // const obj = Object.assign({}, info) // 浅拷贝
+        // // const obj = { ...info } // 浅拷贝
+        // info.name = "lisi"
+        // console.log(obj.name); // zhangsan
+        // info.friends.name = "wanger"
+        // console.log(obj.friends.name); // wanger
+    </script>
+
+    <!-- 3.对象的深拷贝 -->
+    <script>
+        const info = { name: "zhangsan", age: 20, friends:{name: "jms", age: 18} }
+        const obj = JSON.parse(JSON.stringify(info)) // 深拷贝
+        info.friends.name = "wanger"
+        console.log(obj.friends.name); // jms
     </script>
 </body>
 </html>
