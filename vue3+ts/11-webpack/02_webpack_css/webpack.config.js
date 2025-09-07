@@ -21,8 +21,28 @@ module.exports = {
           //   },
           "style-loader", // 负责将样式插入到head的标签中
           "css-loader", // 负责将css文件变成commonjs模块加载到js中
+          "postcss-loader", // css兼容性处理，配合package.json中browserslist来指定兼容性
+          // {
+          //   loader: "postcss-loader",
+          //   options: {
+          //     postcssOptions: {
+          //       // 这里的配置项会覆盖掉postcss.config.js中的配置
+          //       plugins: [
+          //         require("autoprefixer"), // 自动添加浏览器前缀
+          //       ],
+          //     },
+          //   },
+          // },
         ],
       },
+      {
+        test: /\.less$/,
+        use: ["style-loader", "css-loader", "less-loader"],
+      },
+      // {
+      //   test: /\.(less|css)$/,
+      //   use: ["style-loader", "css-loader", "less-loader"],
+      // },
     ],
   },
 };

@@ -1,0 +1,72 @@
+{
+  "id": "4757387",
+  "name": "wedding",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "45439446",
+      "name": "logo-github",
+      "font_class": "logo-github",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "5383656",
+      "name": "setting",
+      "font_class": "shezhi1",
+      "unicode": "e781",
+      "unicode_decimal": 59265
+    },
+    {
+      "icon_id": "18991768",
+      "name": "up",
+      "font_class": "up",
+      "unicode": "e88c",
+      "unicode_decimal": 59532
+    },
+    {
+      "icon_id": "42657878",
+      "name": "down",
+      "font_class": "up-copy",
+      "unicode": "e88d",
+      "unicode_decimal": 59533
+    },
+    {
+      "icon_id": "1199084",
+      "name": "blog",
+      "font_class": "blog",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "18194779",
+      "name": "topic",
+      "font_class": "remenzhuanti",
+      "unicode": "e6c9",
+      "unicode_decimal": 59081
+    },
+    {
+      "icon_id": "42657850",
+      "name": "delete",
+      "font_class": "shanchu-copy",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "1061308",
+      "name": "account",
+      "font_class": "account",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "12779504",
+      "name": "password",
+      "font_class": "password",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    }
+  ]
+}
