@@ -1,7 +1,3 @@
-import sys
-
-sys.path.append(r"E:\workspace\pro\demo01\study\deep_agents")
-
 from typing import Any
 from collections.abc import Callable
 
@@ -15,7 +11,6 @@ from langchain.tools.tool_node import ToolCallRequest
 from langgraph.runtime import Runtime
 from langgraph.types import Command
 
-from app.conf.settings import settings
 from app.utils.log_utils import logger
 
 
